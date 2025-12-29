@@ -1300,7 +1300,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #PORTFOLIO, BLOG 
    */
-   
    .video-container {
     position: relative;
     width: 100%;
@@ -1583,6 +1582,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-posts-list { gap: 30px; }
 
   .blog-content { padding: 25px; }
+
+
+
 
   /**
    * #CONTACT
