@@ -1316,6 +1316,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #PORTFOLIO, BLOG 
    */
+   .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
   .project-img,
   .blog-banner-box { height: auto; }
@@ -1582,6 +1599,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-content { padding: 25px; }
 
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
 
 
   /**
@@ -1668,6 +1703,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * PORTFOLIO
    */
+   .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
   .article-title { padding-bottom: 20px; }
 
@@ -1815,6 +1867,24 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
 
 
