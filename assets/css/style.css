@@ -359,6 +359,11 @@ main {
   }
 }
 
+.languages-container {
+  justify-content: center;
+}
+
+
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
