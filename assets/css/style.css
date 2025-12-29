@@ -1302,9 +1302,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
    .video-container {
     position: relative;
-    width: 150%;
-    max-width: 200%;
-   height: auto;
+    width: 100%;
+    max-width: 1920px;
+    height: 1080px;
     border-radius: 16px;
     overflow: hidden;
     background: #000;
