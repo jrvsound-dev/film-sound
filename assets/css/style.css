@@ -960,11 +960,16 @@ main {
 
 .project-img {
   position: relative;
-  width: 90%;
-  height: 90%;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+}
+
+.project-img img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: var(--transition-1);
 }
 
 .project-img::before {
