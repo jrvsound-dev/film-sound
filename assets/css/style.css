@@ -1460,7 +1460,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* ❗ PRESERVE TEXT STYLES — ONLY ALIGNMENT */
   .project-title,
-  .project-category {
+  .project-category, .contact-title, .service-item-text {
     margin-left: 0;
     padding: 10px 12px;
   }
