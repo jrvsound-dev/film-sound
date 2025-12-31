@@ -1408,6 +1408,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* ================================
    MOBILE: SAFARI-TAB LAYOUT
+   FILTER SAFE
    NO STYLE CHANGES TO TEXT
 ================================ */
 @media (max-width: 767px) {
@@ -1420,8 +1421,18 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 10px;
   }
 
+  /* 🔑 DO NOT FORCE DISPLAY */
   .project-item {
-    display: block !important;
+    width: 100%;
+  }
+
+  /* JS FILTER CONTROLS VISIBILITY */
+  .project-item:not(.active) {
+    display: none;
+  }
+
+  .project-item.active {
+    display: block;
   }
 
   /* Card wrapper */
@@ -1450,11 +1461,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* ❗ PRESERVE TEXT STYLES — ONLY ALIGNMENT */
   .project-title,
   .project-category {
-    margin-left: 0;           /* remove desktop offset */
-    padding: 10px 12px;       /* internal spacing only */
+    margin-left: 0;
+    padding: 10px 12px;
   }
 
 }
+
 
 
 
