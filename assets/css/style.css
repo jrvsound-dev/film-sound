@@ -984,6 +984,32 @@ main {
   border-radius: inherit;          /* 🔑 inherit rounding */
 }
 
+/*-----------------------------------*\
+  #MOBILE VIDEO FULLSCREEN
+\*-----------------------------------*/
+
+(function () {
+  const videoIframe = document.querySelector(".video-wrapper iframe");
+
+  if (!videoIframe) return;
+
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+  if (!isMobile) return;
+
+  videoIframe.addEventListener("click", () => {
+    // iOS Safari
+    if (videoIframe.requestFullscreen) {
+      videoIframe.requestFullscreen();
+    } else if (videoIframe.webkitRequestFullscreen) {
+      videoIframe.webkitRequestFullscreen();
+    } else if (videoIframe.msRequestFullscreen) {
+      videoIframe.msRequestFullscreen();
+    }
+  });
+})();
+
+
 
 /* Fallback for older browsers */
 @supports not (aspect-ratio: 16 / 9) {
