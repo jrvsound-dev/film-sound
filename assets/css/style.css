@@ -333,7 +333,7 @@ main {
 
 /* Auto-collapsed on scroll (mobile) */
 .sidebar.is-collapsed {
-  max-height: 90px;
+  max-height: 420px;
 }
 
 /* Sidebar header */
@@ -1197,6 +1197,19 @@ main {
   --award-color: rgb(167, 167, 167);
 }
 
+/* MOBILE FIX — responsive project image */
+@media (max-width: 767px) {
+  .project-img {
+    height: auto;                 /* remove fixed height */
+    aspect-ratio: 16 / 9;         /* responsive ratio */
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 
 
 
@@ -1419,7 +1432,12 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #PORTFOLIO, BLOG 
    */
   
-  .project-img,
+   .project-img img {
+    width: 100%;
+    height: 356px;
+    object-fit: cover;
+    transition: var(--transition-1);
+  }
   .blog-banner-box { height: auto; }
 
 }
