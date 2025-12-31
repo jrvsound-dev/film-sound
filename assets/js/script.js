@@ -13,7 +13,7 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 let lastScrollY = window.scrollY;
-const COLLAPSE_SCROLL_Y = 180; // 🔥 delay collapse (increase if needed)
+const COLLAPSE_SCROLL_Y = 400; // 🔥 delay collapse (increase if needed)
 
 // Button → ALWAYS EXPAND
 sidebarBtn.addEventListener("click", function (e) {
