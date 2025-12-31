@@ -16,7 +16,7 @@ let lastScrollY = window.scrollY;
 let collapseTimer = null;
 
 const COLLAPSE_SCROLL_Y = 180;   // scroll distance before eligible
-const COLLAPSE_DELAY = 450;      // 🔥 slower collapse (ms)
+const COLLAPSE_DELAY = 650;      // 🔥 slower collapse (ms)
 
 // Button → ALWAYS EXPAND
 sidebarBtn.addEventListener("click", function (e) {
