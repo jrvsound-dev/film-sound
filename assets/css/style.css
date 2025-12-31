@@ -1458,12 +1458,34 @@ textarea.form-input::-webkit-resizer { display: none; }
     object-fit: cover;
   }
 
-  /* ❗ PRESERVE TEXT STYLES — ONLY ALIGNMENT */
+  /* ================================
+   MOBILE: TIGHT TEXT ALIGNMENT
+   NO STYLE CHANGES
+================================ */
+@media (max-width: 767px) {
+
+  /* Preserve alignment */
   .project-title,
-  .project-category, .contact-title, .service-item-text {
+  .project-category,
+  .contact-title,
+  .service-item-text {
     margin-left: 0;
-    padding: 10px 12px;
+    padding-inline: 12px;   /* horizontal alignment only */
   }
+
+  /* 🔧 Vertical spacing control */
+  .project-title {
+    margin-top: 8px;       /* space from image */
+    margin-bottom: 2px;    /* gap to category */
+  }
+
+  .project-category {
+    margin-top: 0;
+    margin-bottom: 8px;    /* space before next card */
+  }
+
+}
+
 
 }
 
