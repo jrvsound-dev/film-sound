@@ -1459,38 +1459,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   /* ================================
-   MOBILE: TIGHT TEXT ALIGNMENT
-   NO STYLE CHANGES
+   MOBILE: SERVICE ITEM ALIGNMENT FIX
+   ALIGN ICONS + TITLES + TEXT
 ================================ */
 @media (max-width: 767px) {
 
-  /* Preserve alignment */
-  .project-title,
-  .project-category,
-  .contact-title,
+  /* Ensure service card content lines up */
+  .service-item {
+    padding: 20px 18px; /* even horizontal rhythm */
+  }
+
+  /* Icon alignment */
+  .service-icon-box {
+    margin-inline: auto;
+  }
+
+  /* Title alignment */
+  .service-item-title {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  /* 🔧 TEXT FIX (your target) */
   .service-item-text {
-    margin-left: 0;
-    padding-inline: 12px;   /* horizontal alignment only */
+    padding-inline: 6px;   /* aligns with icon + title */
+    text-align: center;   /* matches mobile card flow */
   }
-
-  /* 🔧 Vertical spacing control */
-  .project-title {
-    margin-top: 8px;       /* space from image */
-    margin-bottom: 2px;    /* gap to category */
-  }
-
-  .project-category {
-    margin-top: 0;
-    margin-bottom: 2px;    /* space before next card */
-  }
-
-  .service-item-text {
-    margin-top: 0;
-    margin-bottom: 8px;    /* space before next card */
-  }
-
 
 }
+
 
 
 }
