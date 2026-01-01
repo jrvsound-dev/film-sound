@@ -495,47 +495,51 @@ main {
 }
 
 /* ================================
-   SIDEBAR — MOBILE ALIGNMENT ONLY
-   DOES NOT AFFECT PORTFOLIO
+   SIDEBAR MOBILE ALIGNMENT ONLY
+   FULLY ISOLATED — SAFE FOR PORTFOLIO
 ================================ */
 @media (max-width: 767px) {
 
-  /* Contact rows only */
-  .sidebar .contacts-list .contact-item {
+  /* Contact row layout */
+  .sidebar .sidebar-info_more .contact-item {
     align-items: flex-start;
     gap: 14px;
   }
 
-  /* Icon column alignment */
-  .sidebar .contacts-list .icon-box {
+  /* Icon column */
+  .sidebar .sidebar-info_more .icon-box {
     margin-top: 2px;
     flex-shrink: 0;
   }
 
-  /* Text block alignment */
-  .sidebar .contacts-list .contact-info {
+  /* Text column */
+  .sidebar .sidebar-info_more .contact-info {
     padding-right: 0;
-    padding-top: 1px;
+    padding-top: 2px;
   }
 
-  /* Titles + text aligned with icon */
-  .sidebar .contacts-list .contact-title,
-  .sidebar .contacts-list .contact-info :is(.contact-link, time, address) {
-    margin-left: 0;
-    padding-left: 0;
+  /* Titles aligned with text (NOT portfolio) */
+  .sidebar .sidebar-info_more .contact-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  /* Contact text aligned to title */
+  .sidebar .sidebar-info_more .contact-info
+  :is(.contact-link, time, address) {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
   }
 
   /* Social icons align with text column */
-  .sidebar .social-list {
+  .sidebar .sidebar-info_more .social-list {
     padding-left: 0;
     gap: 14px;
   }
 
 }
-
-
-
-
 
 
 
