@@ -495,32 +495,32 @@ main {
 }
 
 /* ================================
-   SIDEBAR MOBILE ALIGNMENT ONLY
+   SIDEBAR — MOBILE ALIGNMENT ONLY
    DOES NOT AFFECT PORTFOLIO
 ================================ */
 @media (max-width: 767px) {
 
-  /* Contact row layout */
-  .sidebar .contact-item {
+  /* Contact rows only */
+  .sidebar .contacts-list .contact-item {
     align-items: flex-start;
     gap: 14px;
   }
 
-  /* Icon alignment */
-  .sidebar .contact-item .icon-box {
+  /* Icon column alignment */
+  .sidebar .contacts-list .icon-box {
     margin-top: 2px;
     flex-shrink: 0;
   }
 
   /* Text block alignment */
-  .sidebar .contact-info {
+  .sidebar .contacts-list .contact-info {
     padding-right: 0;
     padding-top: 1px;
   }
 
-  /* Titles and text aligned to icon column */
-  .sidebar .contact-title,
-  .sidebar .contact-info :is(.contact-link, time, address) {
+  /* Titles + text aligned with icon */
+  .sidebar .contacts-list .contact-title,
+  .sidebar .contacts-list .contact-info :is(.contact-link, time, address) {
     margin-left: 0;
     padding-left: 0;
   }
@@ -532,6 +532,8 @@ main {
   }
 
 }
+
+
 
 
 
